@@ -45,7 +45,7 @@ jobs:
           echo "SERVICE_NAME=${SERVICE_NAME}" >> $GITHUB_ENV
           echo "Using Render service name: ${SERVICE_NAME}"
 
-      - name: Install jq
+      - name: Install jq 
         run: sudo apt-get update && sudo apt-get install -y jq
 
       - name: Delete existing Render service if present
